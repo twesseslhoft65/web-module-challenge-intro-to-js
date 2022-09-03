@@ -19,7 +19,13 @@ Do the following:
 
    HINT: no function required
 */
-
+const votingAge = 18; 
+  if(votingAge >= 18) {
+    console.log('task 1 a:', true)
+  } else {
+    console.log('task 1 a:', false)
+  }
+  
 
 
 /*
@@ -34,7 +40,16 @@ Do the following:
    HINT: no function required
 */
 
+let dog ='Ada';
+let behavior = 'bad';
 
+if(behavior === 'bad'){
+  dog = 'Noa';
+} else {
+  dog = 'Ada';
+}
+
+console.log('task 1 b:', dog);
 
 
 
@@ -49,6 +64,9 @@ Do the following:
    HINT: look up the Number method
 */
 
+const year = '1999';
+console.log('task 1 c:', Number(party));
+
 
 
 
@@ -61,10 +79,15 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
+//function multiply(/*add your code here*/){
   /*add your code here*/
+//}
+
+function multiply(a , b); {
+  (a * b);
 }
 
+console.log('task 1 d:', multiply(9,9));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -77,11 +100,15 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+//function dogYears(/*add your code here*/){
+//  /*add your code here*/
+//www}
+function dogYears(age) {
+  return age * 7;
+
 }
 
-
+console.log('task 2', dogYears(31));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -125,7 +152,8 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
           ^
               24 |   })
       
-        Notice the expected and received, expected is what the test is looking for, and received is what was actually returned from this function. You can also see it's passing in two values, the number 4 and the number 1. 
+        Notice the expected and received, expected is what the test is looking for, and received is what was actually returned from this function.
+         You can also see it's passing in two values, the number 4 and the number 1. 
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
 
